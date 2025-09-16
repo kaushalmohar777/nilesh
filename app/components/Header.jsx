@@ -9,7 +9,7 @@ import logo from '../assets/Folder 1 (1) 1.png'
 export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
   const {shop, menu} = header;
   return (
-    <header className="header">
+    <header className="header w-full max-w-7xl mx-auto pl-5 pr-5 pb-5 pt-5 gap-5">
       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
         <strong><img src={logo} alt='main-logo'/></strong>
       </NavLink>
@@ -18,8 +18,11 @@ export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
         viewport="desktop"
         primaryDomainUrl={header.shop.primaryDomain.url}
         publicStoreDomain={publicStoreDomain}
+        className="ml-auto"
       />
-      <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} />
+      <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} 
+      className="ml-auto"
+      />
     </header>
   );
 }
