@@ -20,6 +20,7 @@ export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
         publicStoreDomain={publicStoreDomain}
       />
       <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} />
+      <button>Test</button>
     </header>
   );
 }
