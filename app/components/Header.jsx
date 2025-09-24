@@ -9,7 +9,7 @@ import logo from '../assets/Folder 1 (1) 1.png'
 export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
   const {shop, menu} = header;
   return (
-    <header className="header w-full max-w-7xl mx-auto pl-5 pr-5 pb-5 pt-5 py-4 gap-5">
+    <header className="header w-full max-w-7xl mx-auto pl-5 pr-5 py-6 gap-5">
       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
         <strong><img src={logo} alt='main-logo'/></strong>
       </NavLink>
