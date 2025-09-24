@@ -21,7 +21,7 @@ export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
         className="ml-auto"
       />
       <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} 
-      className="ml-auto"
+      className="ml-0"
       />
     </header>
   );
