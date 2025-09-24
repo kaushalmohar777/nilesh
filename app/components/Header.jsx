@@ -41,7 +41,7 @@ export function HeaderMenu({
   viewport,
   publicStoreDomain,
 }) {
-  const className = `header-menu-${viewport}`;
+  const className = `header-menu-${viewport} w-full justify-end flex gap-5`;
   const {close} = useAside();
 
   return (
