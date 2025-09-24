@@ -2,7 +2,9 @@ import {Suspense} from 'react';
 import {Await, NavLink, useAsyncValue} from 'react-router';
 import {useAnalytics, useOptimisticCart} from '@shopify/hydrogen';
 import {useAside} from '~/components/Aside';
-import logo from '../assets/Folder 1 (1) 1.png'
+import logo from '../assets/Folder 1 (1) 1.png';
+import account from '../assets/acc.svg';
+import cart from '../assets/cart.svg'
 /**
  * @param {HeaderProps}
  */
@@ -95,7 +97,7 @@ function HeaderCtas({isLoggedIn, cart}) {
       <NavLink prefetch="intent" to="/account" style={activeLinkStyle}>
         <Suspense fallback="Sign in">
           <Await resolve={isLoggedIn} errorElement="Sign in">
-            {(isLoggedIn) => (isLoggedIn ? 'Account' : 'Sign in')}
+            {(isLoggedIn) => (isLoggedIn ? {account} : {account})}
           </Await>
         </Suspense>
       </NavLink>
