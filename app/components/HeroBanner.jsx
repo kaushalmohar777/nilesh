@@ -1,56 +1,97 @@
 import { useState, useEffect } from 'react';
-
+import BgImg from '../assets/hero banner.png';
+import box from '../assets/box.png'
 const slides = [
   {
     id: 1,
-    image: '/images/hydrogen1.jpg',
-    title: 'Clean Energy Future',
-    subtitle: 'Powered by Hydrogen',
+    title: 'Vanaya Health\nSmart Growth Mix',
+    subtitle: "A Smart Parent’s Daily Choice for Your Child’s Maximum Potential.",
+    buttonText: 'Shop Now',
+    image:{BgImg} ,
+    background: {BgImg},
   },
   {
     id: 2,
-    image: '/images/hydrogen2.jpg',
-    title: 'Fuel the Planet',
-    subtitle: 'Hydrogen for all',
+    title: 'Boost Immunity\nwith Nature',
+    subtitle: '100% Natural Ingredients. No Chemicals. Only Growth.',
+    buttonText: 'Explore',
+    image: '/images/vanaya-product2.png',
+    background: '/images/bg2.jpg',
   },
   {
     id: 3,
-    image: '/images/hydrogen3.jpg',
-    title: 'Green Revolution',
-    subtitle: 'Sustainable, Clean, Efficient',
+    title: 'Fuel Your Child’s Brain',
+    subtitle: 'Smart nutrients for sharp minds and strong bodies.',
+    buttonText: 'Buy Now',
+    image: '/images/vanaya-product3.png',
+    background: '/images/bg3.jpg',
   },
 ];
 
-export default function BannerSlider() {
-  const [current, setCurrent] = useState(0);
+export default function HeroSlideshow() {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000); // 5-second auto-slide
-    return () => clearInterval(timer);
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000); // 5 seconds
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-[500px] overflow-hidden">
+    <section className="relative min-h-[500px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute w-full h-full transition-opacity duration-1000 ${
-            index === current ? 'opacity-100' : 'opacity-0'
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
           }`}
+          style={{
+            backgroundImage: `url('${slide.background}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
         >
-          <img
-            src={slide.image}
-            alt={slide.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
-            <h2 className="text-4xl font-bold">{slide.title}</h2>
-            <p className="text-lg mt-2">{slide.subtitle}</p>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black opacity-30"></div>
+
+          {/* Content */}
+          <div className="relative z-10 flex flex-col md:flex-row w-full h-full items-center justify-between max-w-7xl mx-auto px-6 md:px-16 py-12">
+            {/* Text */}
+            <div className="text-white md:w-1/2 mb-8 md:mb-0">
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight whitespace-pre-line">
+                {slide.title}
+              </h1>
+              <p className="mt-4 text-lg">{slide.subtitle}</p>
+              <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded transition duration-300">
+                {slide.buttonText}
+              </button>
+            </div>
+
+            {/* Image */}
+            <div className="md:w-1/2 flex justify-center">
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="max-w-xs md:max-w-md drop-shadow-xl"
+              />
+            </div>
           </div>
         </div>
       ))}
-    </div>
+
+      {/* Slide Indicators (dots) */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+        {slides.map((_, idx) => (
+          <div
+            key={idx}
+            onClick={() => setCurrentSlide(idx)}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              idx === currentSlide ? 'bg-white' : 'bg-gray-400'
+            }`}
+          ></div>
+        ))}
+      </div>
+    </section>
   );
 }

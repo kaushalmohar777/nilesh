@@ -67,6 +67,7 @@ export default function Homepage() {
       {/* <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} /> */}
     <HeroBanner />
+        <h2>HEy</h2>
     </div>
   );
 }
