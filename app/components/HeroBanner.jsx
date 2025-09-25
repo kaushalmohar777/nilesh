@@ -15,8 +15,8 @@ const slides = [
     title: 'Boost Immunity\nwith Nature',
     subtitle: '100% Natural Ingredients. No Chemicals. Only Growth.',
     buttonText: 'Explore',
-    image: '/images/vanaya-product2.png',
-    background: '/images/bg2.jpg',
+    image: '../assets/box.png',
+    background: '../assets/box.png',
   },
   {
     id: 3,
