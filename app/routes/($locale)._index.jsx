@@ -66,6 +66,13 @@ export default function Homepage() {
     <div className="home">
       {/* <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} /> */}
+
+
+      <h2>Hey Guys !</h2>
+      <h2>Welcome to my first Hydrogen App</h2>
+      <h3>This is just a demo app for learning purpose</h3>
+      <h3>Stay Tuned for more updates</h3>
+      <h2>Thank You !</h2>
     </div>
   );
 }
