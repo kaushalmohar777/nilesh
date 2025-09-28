@@ -7,7 +7,7 @@ const slides = [
     title: 'Vanaya Health\nSmart Growth Mix',
     subtitle: "A Smart Parent’s Daily Choice for Your Child’s Maximum Potential.",
     buttonText: 'Shop Now',
-    image:{BgImg} ,
+    image:{box} ,
     background: {BgImg},
   },
   {
@@ -23,8 +23,8 @@ const slides = [
     title: 'Fuel Your Child’s Brain',
     subtitle: 'Smart nutrients for sharp minds and strong bodies.',
     buttonText: 'Buy Now',
-    image: '../assets/BgImg.png',
-    background: '/images/bg3.jpg',
+    image: '../assets/box.png',
+    background: '../assets/hero banner.png',
   },
 ];
 
