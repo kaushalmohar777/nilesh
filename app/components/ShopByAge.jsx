@@ -1,22 +1,7 @@
-import {useShopQuery, gql, Link} from '@shopify/hydrogen';
+import {useShopQuery, Link} from '@shopify/hydrogen';
+import {SHOP_BY_AGE_QUERY} from '../lib/queries/collectionsByTitles';
 
 const COLLECTION_TITLES = ['2-6 Years', '7-12 Years', '13+ Years'];
-
-const SHOP_BY_AGE_QUERY = gql`
-  query shopByAge($titles: [String!]) {
-    collections(first: 10, query: $titles) {
-      nodes {
-        id
-        title
-        handle
-        image {
-          url
-          altText
-        }
-      }
-    }
-  }
-`;
 
 export default function ShopByAge() {
   const {data} = useShopQuery({
@@ -29,21 +14,19 @@ export default function ShopByAge() {
   const collections = data?.collections?.nodes || [];
 
   return (
-    <section className="py-12 px-6 bg-[#f9f9f6] text-center">
+    <section className="p-8 bg-[#f9f9f6] text-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-2">Shop by Age</h2>
       <p className="text-gray-500 mb-6">
-        Browse toys and products by age group.
+        Har age group ke liye perfect products yahan hai!
       </p>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {collections.map((collection, index) => (
           <Link
             key={collection.id}
             to={`/collections/${collection.handle}`}
-            className="rounded-lg p-6 transition transform hover:scale-105"
-            style={{
-              backgroundColor: getBgColor(index),
-              color: 'white',
-            }}
+            className="rounded-lg p-6 transition transform hover:scale-105 text-white"
+            style={{backgroundColor: getBgColor(index)}}
           >
             <img
               src={collection.image?.url}
@@ -58,8 +41,8 @@ export default function ShopByAge() {
   );
 }
 
-// Utility to get background colors
+// 🔧 Background color helper
 function getBgColor(index) {
-  const colors = ['#F9713C', '#A6C48A', '#0A4D68'];
+  const colors = ['#F9713C', '#A6C48A', '#0A4D68']; // orange, green, blue
   return colors[index % colors.length];
 }
