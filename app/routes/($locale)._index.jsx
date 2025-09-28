@@ -3,7 +3,6 @@ import {Suspense} from 'react';
 import {Image} from '@shopify/hydrogen';
 import {ProductItem} from '~/components/ProductItem';
 import HeroBanner from '~/components/HeroBanner';
-import ShopByAge from '~/components/ShopByAge';
 /**
  * @type {MetaFunction}
  */
@@ -66,9 +65,7 @@ export default function Homepage() {
   return (
     <div className="home">
     <HeroBanner />
-      {/* <FeaturedCollection collection={data.featuredCollection} />
-      <RecommendedProducts products={data.recommendedProducts} /> */}
-      {/* <ShopByAge /> */}
+   
     </div>
   );
 }
