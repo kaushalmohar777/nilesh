@@ -39,7 +39,7 @@ export default function HeroSlideshow() {
   }, []);
 
   return (
-    <section className="relative min-h-[500px] overflow-hidden">
+    <section className="relative min-h-[700px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -69,7 +69,7 @@ export default function HeroSlideshow() {
             </div>
 
             {/* Image */}
-            <div className="md:w-1/2 flex justify-center">
+            <div className="md:w-1/2 flex justify-end">
               <img
                 src={slide.image}
                 alt={slide.title}
