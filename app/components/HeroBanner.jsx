@@ -59,7 +59,7 @@ export default function HeroSlideshow() {
           <div className="relative z-10 flex flex-col md:flex-row w-full h-full items-center justify-between max-w-7xl mx-auto px-6 md:px-12 py-12">
             {/* Text */}
             <div className="text-white md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-[68px] md:text-5xl font-bold leading-tight whitespace-pre-line">
+              <h1 className="text-[68px] font-bold leading-tight whitespace-pre-line">
                 {slide.title}
               </h1>
               <p className="mt-4 text-xl">{slide.subtitle}</p>
