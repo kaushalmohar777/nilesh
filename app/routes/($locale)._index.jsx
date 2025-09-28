@@ -3,6 +3,7 @@ import {Suspense} from 'react';
 import {Image} from '@shopify/hydrogen';
 import {ProductItem} from '~/components/ProductItem';
 import HeroBanner from '~/components/HeroBanner';
+import Multicolumn from '~/components/Multicolumn';
 /**
  * @type {MetaFunction}
  */
@@ -65,6 +66,7 @@ export default function Homepage() {
   return (
     <div className="home">
     <HeroBanner />
+    <Multicolumn />
     </div>
   );
 }
