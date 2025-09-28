@@ -23,7 +23,7 @@ const slides = [
     title: 'Fuel Your Child’s Brain',
     subtitle: 'Smart nutrients for sharp minds and strong bodies.',
     buttonText: 'Buy Now',
-    image: '/images/vanaya-product3.png',
+    image: '../assets/BgImg.png',
     background: '/images/bg3.jpg',
   },
 ];
