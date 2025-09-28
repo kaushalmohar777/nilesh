@@ -56,14 +56,14 @@ export default function HeroSlideshow() {
           <div className="absolute inset-0 bg-black opacity-30"></div>
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col md:flex-row w-full h-full items-center justify-between max-w-7xl mx-auto px-6 md:px-16 py-12">
+          <div className="relative z-10 flex flex-col md:flex-row w-full h-full items-center justify-between max-w-7xl mx-auto px-6 md:px-12 py-12">
             {/* Text */}
             <div className="text-white md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight whitespace-pre-line">
+              <h1 className="text-[68px] md:text-5xl font-bold leading-tight whitespace-pre-line">
                 {slide.title}
               </h1>
-              <p className="mt-4 text-lg">{slide.subtitle}</p>
-              <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded transition duration-300">
+              <p className="mt-4 text-xl">{slide.subtitle}</p>
+              <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded transition duration-300 text-[15px]">
                 {slide.buttonText}
               </button>
             </div>
