@@ -12,7 +12,6 @@ export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
   const {shop, menu} = header;
   return (
     <header className="header w-full max-w-7xl mx-auto pl-5 pr-5 py-6 gap-5 h-100
-    position:absolute; top:0; left:0; z-index:100; background: transparent;
 
     ">
       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
