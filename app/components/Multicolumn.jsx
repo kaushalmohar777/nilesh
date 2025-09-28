@@ -7,9 +7,9 @@ const Multicolumn = () => {
     <>
     <div className="bg-pale py-12">
 <div class="w-full max-w-[1260px] mx-auto px-4 sm:px-6 lg:px-8">
-<div>
-  <h2 className=''> Shop by Age </h2>
-  <p className=''>Lorem ipsum is a dummy or placeholder text commonly used in graphic design.</p>
+<div className='text-center mb-10'>
+  <h2 className='text-[32px] text-#013D54-700'> Shop by Age </h2>
+  <p className='text-[16px] text-#013D54-500'>Lorem ipsum is a dummy or placeholder text commonly used in graphic design.</p>
 </div>
 <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
   <div
