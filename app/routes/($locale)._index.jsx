@@ -68,7 +68,7 @@ export default function Homepage() {
     <HeroBanner />
       {/* <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} /> */}
-      <ShopByAge />
+      {/* <ShopByAge /> */}
     </div>
   );
 }
