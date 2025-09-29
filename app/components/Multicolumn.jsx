@@ -14,14 +14,14 @@ const Multicolumn = () => {
 </div>
 <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
    <a href="#" className='cursor-pointer text-decoration-none 
-   p-6 rounded-lg shadow-md text-center bg-cover bg-center
-   '>
+   p-6 rounded-lg shadow-md text-center d-flex'
+   style={{backgroundColor:'#DA6527'}}
+   >
   <div
-  className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
+  className=""
   // style={{ backgroundImage: `url(${Bg1})` }}
 >
-    <h2 className='text-2xl font-semibold mb-4'>Column 1</h2>
-    <p className='text-gray-600'>This is the content for the first column. You can add any text or elements here.</p>
+    <h2 className='text-2xl font-semibold mb-4 text-white'>13+Years</h2>
   </div>
   <div className=''>
 <img src={firstImg} alt='hey' />
@@ -34,8 +34,8 @@ const Multicolumn = () => {
   className=""
   // style={{ backgroundImage: `url(${Bg2})` }}
 >
-    <h2 className='text-2xl font-semibold mb-4'>Column 2</h2>
-    <p className='text-gray-600'>This is the content for the second column. You can add any text or elements here.</p>
+    <h2 className='text-2xl font-semibold mb-4'>2-6Years</h2>
+
   </div>
    <div className=''>
 <img src='' alt='' />
@@ -48,8 +48,7 @@ const Multicolumn = () => {
   className=""
   // style={{ backgroundImage: `url(${Bg3})` }}
 >
-    <h2 className='text-2xl font-semibold mb-4'>Column 3</h2>
-    <p className='text-gray-600'>This is the content for the third column. You can add any text or elements here.</p>
+    <h2 className='text-2xl font-semibold mb-4'>7-12 Years</h2>
   </div>
    <div className=''>
 <img src='' alt='' />
