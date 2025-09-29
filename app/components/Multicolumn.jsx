@@ -13,7 +13,9 @@ const Multicolumn = () => {
   <p className='text-[16px] text-#013D54-500'>Lorem ipsum is a dummy or placeholder text commonly used in graphic design.</p>
 </div>
 <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-   <a href="#" className='cursor-pointer text-decoration-none'>
+   <a href="#" className='cursor-pointer text-decoration-none 
+   p-6 rounded-lg shadow-md text-center bg-cover bg-center
+   '>
   <div
   className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
   // style={{ backgroundImage: `url(${Bg1})` }}
@@ -25,9 +27,11 @@ const Multicolumn = () => {
 <img src={firstImg} alt='hey' />
   </div>
   </a>
-   <a href="#" className='cursor-pointer text-decoration-none'>
+   <a href="#" className='cursor-pointer text-decoration-none
+   p-6 rounded-lg shadow-md text-center bg-cover bg-center
+   '>
   <div
-  className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
+  className=""
   // style={{ backgroundImage: `url(${Bg2})` }}
 >
     <h2 className='text-2xl font-semibold mb-4'>Column 2</h2>
@@ -37,9 +41,11 @@ const Multicolumn = () => {
 <img src='' alt='' />
   </div>
   </a>
-   <a href="#" className='cursor-pointer text-decoration-none'>
+   <a href="#" className='cursor-pointer text-decoration-none
+   p-6 rounded-lg shadow-md text-center bg-cover bg-center
+   '>
   <div
-  className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
+  className=""
   // style={{ backgroundImage: `url(${Bg3})` }}
 >
     <h2 className='text-2xl font-semibold mb-4'>Column 3</h2>
