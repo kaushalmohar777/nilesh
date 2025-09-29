@@ -1,7 +1,8 @@
 import React from 'react'
-import Bg1 from '../assets/2-6year.png'
-import Bg2 from '../assets/7-12year.png'
-import Bg3 from '../assets/13+year.png'
+// import Bg1 from '../assets/2-6year.png'
+// import Bg2 from '../assets/7-12year.png'
+// import Bg3 from '../assets/13+year.png'
+import firstImg from '../assets/first-img.png'
 const Multicolumn = () => {
   return (
     <>
@@ -15,28 +16,37 @@ const Multicolumn = () => {
    <a href="#" className='cursor-pointer text-decoration-none'>
   <div
   className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
-  style={{ backgroundImage: `url(${Bg1})` }}
+  // style={{ backgroundImage: `url(${Bg1})` }}
 >
     <h2 className='text-2xl font-semibold mb-4'>Column 1</h2>
     <p className='text-gray-600'>This is the content for the first column. You can add any text or elements here.</p>
   </div>
-  </a>
-   <a href="#" className='cursor-pointer text-decoration-none'>
-  <div
-  className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
-  style={{ backgroundImage: `url(${Bg2})` }}
->
-    <h2 className='text-2xl font-semibold mb-4'>Column 2</h2>
-    <p className='text-gray-600'>This is the content for the second column. You can add any text or elements here.</p>
+  <div className=''>
+<img src={firstImg} alt='hey' />
   </div>
   </a>
    <a href="#" className='cursor-pointer text-decoration-none'>
   <div
   className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
-  style={{ backgroundImage: `url(${Bg3})` }}
+  // style={{ backgroundImage: `url(${Bg2})` }}
+>
+    <h2 className='text-2xl font-semibold mb-4'>Column 2</h2>
+    <p className='text-gray-600'>This is the content for the second column. You can add any text or elements here.</p>
+  </div>
+   <div className=''>
+<img src='' alt='' />
+  </div>
+  </a>
+   <a href="#" className='cursor-pointer text-decoration-none'>
+  <div
+  className="p-6 rounded-lg shadow-md text-center bg-cover bg-center"
+  // style={{ backgroundImage: `url(${Bg3})` }}
 >
     <h2 className='text-2xl font-semibold mb-4'>Column 3</h2>
     <p className='text-gray-600'>This is the content for the third column. You can add any text or elements here.</p>
+  </div>
+   <div className=''>
+<img src='' alt='' />
   </div>
   </a>
 </div>
