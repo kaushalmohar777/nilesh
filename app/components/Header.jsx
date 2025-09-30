@@ -5,10 +5,33 @@ import {useAside} from '~/components/Aside';
 import logo from '../assets/Folder 1 (1) 1.png';
 import account from '../assets/acc.svg';
 import cart from '../assets/cart.svg'
+import React, { useState, useEffect } from "react";
 /**
  * @param {HeaderProps}
  */
 export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
+  const StickyHeader = () => {
+  // State to track if the page is scrolled
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle scroll event
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  // Set up scroll listener
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const {shop, menu} = header;
   return (
     <header className="header w-full max-w-7xl mx-auto pl-5 pr-5 py-6 gap-5 h-100
