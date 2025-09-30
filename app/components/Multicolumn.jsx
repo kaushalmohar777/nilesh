@@ -5,13 +5,13 @@ import thirdImg from '../assets/thirdimg.png'
 const Multicolumn = () => {
   return (
     <>
-    <div className="bg-pale py-12">
+    <div className="bg-pale py-12 conatiner-main">
 <div class="w-full max-w-[1260px] mx-auto px-4 sm:px-6 lg:px-8">
 <div className='text-center mb-10'>
-  <h2 className='text-[32px] text-#013D54-700'> Shop by Age </h2>
+  <h2 className='text-[32px] text-#013D54-900'> Shop by Age </h2>
   <p className='text-[16px] text-#013D54-500'>Lorem ipsum is a dummy or placeholder text commonly used in graphic design.</p>
 </div>
-<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+<div className='grid grid-cols-1 md:grid-cols-3 gap-6 pt-6'>
    <a href="#" className='cursor-pointer text-decoration-none 
    p-6 rounded-lg shadow-md text-center main-div'
    style={{backgroundColor:'#DA6527'}}
