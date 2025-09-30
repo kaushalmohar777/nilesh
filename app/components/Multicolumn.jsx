@@ -14,7 +14,7 @@ const Multicolumn = () => {
 </div>
 <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
    <a href="#" className='cursor-pointer text-decoration-none 
-   p-6 rounded-lg shadow-md text-center d-flex'
+   p-6 rounded-lg shadow-md text-center main-div'
    style={{backgroundColor:'#DA6527'}}
    >
   <div
@@ -23,7 +23,7 @@ const Multicolumn = () => {
 >
     <h2 className='text-2xl font-semibold mb-4 text-white'>13+Years</h2>
   </div>
-  <div className=''>
+  <div className='img-div-main'>
 <img src={firstImg} alt='hey' />
   </div>
   </a>
@@ -37,7 +37,7 @@ const Multicolumn = () => {
     <h2 className='text-2xl font-semibold mb-4'>2-6Years</h2>
 
   </div>
-   <div className=''>
+   <div className='img-div-main'>
 <img src='' alt='' />
   </div>
   </a>
@@ -50,7 +50,7 @@ const Multicolumn = () => {
 >
     <h2 className='text-2xl font-semibold mb-4'>7-12 Years</h2>
   </div>
-   <div className=''>
+   <div className='img-div-main'>
 <img src='' alt='' />
   </div>
   </a>
