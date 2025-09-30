@@ -17,7 +17,6 @@ import tailwindCss from './styles/tailwind.css?url';
 import {PageLayout} from './components/PageLayout';
 import font from './styles/font.css?url';
 import talwindConfig from './talwind.config';
-import myCss from '../styles/myCss'
 /**
  * This is important to avoid re-fetching root queries on sub-navigations
  * @type {ShouldRevalidateFunction}
