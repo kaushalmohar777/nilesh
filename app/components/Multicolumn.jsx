@@ -1,8 +1,7 @@
 import React from 'react'
-// import Bg1 from '../assets/2-6year.png'
-// import Bg2 from '../assets/7-12year.png'
-// import Bg3 from '../assets/13+year.png'
 import firstImg from '../assets/first-img.png'
+import secondImg from '../assets/secondimg.png'
+import thirdImg from '../assets/thirdimg.png'
 const Multicolumn = () => {
   return (
     <>
@@ -28,7 +27,7 @@ const Multicolumn = () => {
   </div>
   </a>
    <a href="#" className='cursor-pointer text-decoration-none
-   p-6 rounded-lg shadow-md text-center bg-cover bg-center
+   p-6 rounded-lg shadow-md text-center bg-cover bg-center main-div
    '>
   <div
   className=""
@@ -38,11 +37,11 @@ const Multicolumn = () => {
 
   </div>
    <div className='img-div-main'>
-<img src='' alt='' />
+<img src={secondImg} alt='' />
   </div>
   </a>
    <a href="#" className='cursor-pointer text-decoration-none
-   p-6 rounded-lg shadow-md text-center bg-cover bg-center
+   p-6 rounded-lg shadow-md text-center bg-cover bg-center main-div
    '>
   <div
   className=""
@@ -51,7 +50,7 @@ const Multicolumn = () => {
     <h2 className='text-2xl font-semibold mb-4'>7-12 Years</h2>
   </div>
    <div className='img-div-main'>
-<img src='' alt='' />
+<img src={thirdImg} alt='' />
   </div>
   </a>
 </div>
