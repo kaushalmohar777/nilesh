@@ -67,6 +67,7 @@ export default function Homepage() {
     <div className="home">
     <HeroBanner />
     <Multicolumn />
+    <FeaturedCollection collection={data.featuredCollection} />
     </div>
   );
 }
